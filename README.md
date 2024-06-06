@@ -16,6 +16,20 @@ Below an example of the result:
 ![SoC solder side](https://github.com/1arthur1/MiyooMini-USB-Support/blob/master/images/SoC_Connection.png?raw=true)
 ![USB-C solder side](https://github.com/1arthur1/MiyooMini-USB-Support/blob/master/images/USB_C_Connection.png?raw=true)
 
+## 2. Power your USB device with an external 5V power supply (to be improved)
+
+The Miyoo USB-C port is only used to charge the battery. In other words, nothing inside the console will generate a 5V on your USB-C port.
+
+My quick & dirty temporary solution is to use an external 5V power supply which is my USB-to-UART dongle.
+
+I don't want to charge the battery of the console with this external power supply so I'm using a USB-C male to female PCB on which I cut the VBUS trace and plug the external 5V power supply on the female connector side. (you can buy one [here]([here]](https://www.aliexpress.com/item/1005003228528255.html)))
+
+![5V power supply](https://github.com/1arthur1/MiyooMini-USB-Support/blob/master/images/5V_setup.png?raw=true)
+
+## 3. Software configuration
+
+I'll soon share retroarch configuration files to use joysticks and enable multiplayer on your Miyoo Mini + !
+
 ## Useful information
 [SoC Datasheet](https://eaw.app/Downloads/SSD202D_Reference_v04.pdf)
 
